@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex"
+import brand from "./classify_brand"
 Vue.use(Vuex);
 const state = {
 
@@ -16,6 +17,6 @@ export default new Vuex.Store({
     actions,
     mutations,
     modules:{
-
+        brand
     }
 })

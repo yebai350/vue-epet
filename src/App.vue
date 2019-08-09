@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view />
-    <TabBar />
+    <router-view/>
+    <TabBar v-if="this.$route.meta.flag"/>
   </div>
 </template>
 <script>
@@ -13,12 +13,15 @@ export default {
     TabBar
   },
   created() {
-    http("get", "/api/movieOnInfoList?cityId=10").then(data => {
-      console.log(data);
+    http("get", "/v3/index/main.html").then(data => {
+      // console.log(data);
     });
   }
 };
 </script>
 
 <style>
+#app{
+  cursor: pointer;
+}
 </style>

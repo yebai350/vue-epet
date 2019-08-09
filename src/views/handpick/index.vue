@@ -1,11 +1,20 @@
 <template>
-    <div>  主页面</div>
+  <div class="handpick">
+    <Header />
+    <Center />
+  </div>
 </template>
 <script>
 export default {
-    name:"Handpick"
-}
+  name: "Handpick"
+};
 </script>
-<style scoped>
-
+<style>
+.handpick {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+  overflow: scroll;
+  position: absolute;
+}
 </style>

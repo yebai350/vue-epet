@@ -20,29 +20,29 @@ export default {
         return {
             navs:[
                 {
-                    icon:"&#xe608;",
+                    icon:"&#xe638;",
                     text:"精选",
-                    path:"./handpick"
+                    path:"/handpick",
                 },
                 {
-                    icon:"&#xe604;",
+                    icon:"&#xe602;",
                     text:"分类",
-                    path:"./classify"
+                    path:"/classify"
                 },
                 {
-                    icon:"&#xe61b;",
+                    icon:"&#xe649;",
                     text:"小萌书",
-                    path:"./smbook"
+                    path:"/smbook"
                 },
                 {
-                    icon:"&#xe60c;",
+                    icon:"&#xe62a;",
                     text:"购物车",
-                    path:"./shopcar"
+                    path:"/shopcar"
                 },
                 {
-                    icon:"&#xe619;",
+                    icon:"&#xe629;",
                     text:"我的",
-                    path:"./mine"
+                    path:"/mine"
                 },
             ]
         }
@@ -53,11 +53,12 @@ export default {
  #footer{
         width: 100%;
         height: 1rem;
-        position: fixed;
+        position: absolute;
         left: 0;
         bottom:0;
         background: #fff;
-        border-top:1px solid #ccc;
+        border-top:.01rem solid #ccc;
+        box-shadow: 0rem -.01rem .4rem #e7e7e7;
     }
     
     #footer ul,#footer ul li{
@@ -79,6 +80,6 @@ export default {
     }
 
     #footer ul .router-link-active{
-        color:green;
+        color:rgb(11, 165, 11);
     }
 </style>

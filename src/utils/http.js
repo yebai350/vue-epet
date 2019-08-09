@@ -5,7 +5,7 @@ import loading from "../lib/loading/index.js"
 let vm = loading()
 const server = axios.create({
     // baseURL:"",
-    timeout: 5000,
+    timeout: 6000,
     withCredentials: true
 })
 
